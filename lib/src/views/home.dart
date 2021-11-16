@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_reels/src/views/video_view.dart';
 import 'package:instagram_reels/src/widgets/action_toolbar.dart';
 import 'package:instagram_reels/src/widgets/bottom_toolbar.dart';
 import 'package:instagram_reels/src/widgets/video_des.dart';
@@ -38,13 +39,16 @@ class HomeView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.black,
-        body: Column(
-          children: [
-            topSection,
-            middleSection,
-            const BottomToolbar(),
-          ],
-        ),
+        body: Stack(children: [
+          const VideoView(),
+          Column(
+            children: [
+              topSection,
+              middleSection,
+              const BottomToolbar(),
+            ],
+          ),
+        ]),
       ),
     );
   }
