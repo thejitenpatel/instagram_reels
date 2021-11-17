@@ -5,6 +5,8 @@ Instagram reels UI with preloading videos.
 
 ### Demo 👀
 
+![Output sample](images/demo.gif)
+
 ### Usage 🎨
 
 To clone and run this application, you'll need [git](https://git-scm.com) and [flutter](https://flutter.dev/docs/get-started/install) installed on your computer. From your command line:
